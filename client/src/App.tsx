@@ -1,6 +1,7 @@
 import Main from "./pages/Main";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "./App.css";
+import MyList from "pages/MyList";
+import "./styles/globals.css";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Main />} />
+          <Route path="/mylist" element={<MyList />} />
         </Routes>
       </Router>
     </>
