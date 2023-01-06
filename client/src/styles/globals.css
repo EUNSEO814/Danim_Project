@@ -32,3 +32,23 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI Adjusted",
     "Segoe UI", "Liberation Sans", sans-serif;
 }
+@layer base {
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"] {
+    -webkit-appearance: none;
+    margin: 0;
+    -moz-appearance: textfield !important;
+  }
+}
+@layer components {
+  .inputContainer {
+    @apply py-0 px-4 rounded-[35px] shadow-custom-shadow-green flex content-center items-center justify-between;
+  }
+  .dateArea {
+    @apply font-shinb text-[16px] pl-[8px] pr-[4px] border-none bg-customBG-white appearance-none focus:outline-none;
+  }
+  .options {
+    @apply font-shinb px-[10px] py-[3px];
+  }
+}
